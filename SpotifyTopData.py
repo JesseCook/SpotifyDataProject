@@ -43,11 +43,11 @@ if token:
 
         print("range:", timeInterval[range])
 
-        # Get the top 10 artists listened to during this time range.
-        artistsResults = sp.current_user_top_artists(time_range=range, limit = 25)
+        # Get the top 50 artists listened to during this time range.
+        artistsResults = sp.current_user_top_artists(time_range=range, limit = 50)
 
-        # Get the top 10 tracks listened to during this time range.
-        trackResults = sp.current_user_top_tracks(time_range=range, limit = 25)
+        # Get the top 50 tracks listened to during this time range.
+        trackResults = sp.current_user_top_tracks(time_range=range, limit = 50)
 
 
         print('Artists')

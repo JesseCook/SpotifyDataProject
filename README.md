@@ -10,7 +10,11 @@ Next, you will want to set up authentication for using Spotify's API by getting 
 
 https://developer.spotify.com/dashboard/
 
-Once you have logged in to the developer dashboard you can access both the Client ID, and the Client Secret Code. After you have downloaded our script, open the terminal and move to the directory that you saved the script. After you are in this directory write the following code:
+Once you have logged in to the developer dashboard you can create a new app to host this code. Fill out the form for a new app with the default information, or as you please, except you must add the following link to your Redirect URIs:
+
+http://google.com/
+
+This will give you access to your Client ID, and Client Secret Code. After you have downloaded our script, open the terminal and move to the directory that you saved the script. After you are in this directory write the following code:
 ```
 export SPOTIPY_CLIENT_ID='clientID'
 export SPOTIPY_CLIENT_SECRET='client_secret'
@@ -22,6 +26,6 @@ Lastly, run the program in the same terminal instance by writing the following c
 ```
 python3 SpotifyTopData.py username
 ```
-Here, use your Spotify username in place of where username is used in the above code snippet. This will run the script and your top artists and tracks will be shown. They will be broken up by month, year, and all time. Also, it will show your most listened to genre for each time range. 
+Here, use your Spotify username in place of where username is used in the above code snippet. This will run the script and you will be redirected to give permission to access your account data. Once you accept you will be directed to Google, except it will have a much longer URL. Copy and paste the full URL back into the terminal and press enter. Next, your top artists and tracks will be shown. They will be broken up by month, year, and all time. Also, it will show your most listened to genre for each time range. 
 
 Enjoy!
